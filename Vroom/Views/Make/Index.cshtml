@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Vroom.Models.Make>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br /> <br />
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-info">Makes of Vehicle </h2>
+    </div>
+    <div class="col-6 text-right">
+        <a class="btn btn-info" asp-action="Create">Add New Make</a>
+    </div>
+
+    <br />
+
+    <div>
+        <table class="table table-striped border">
+            <tr class="table-info">
+                <th>
+                   @Html.DisplayFor(m => m.Select(m=>m.Name)))
+                </th>
+                <th></th>
+            </tr>
+            
+        </table>
+    </div>
+
+</div>
